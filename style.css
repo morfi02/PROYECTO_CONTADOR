@@ -1,0 +1,15 @@
+body{
+    background-image: url(./images/bg-stars.svg);
+}
+
+footer{
+    background-image: url(./images/pattern-hills.svg);
+    display: flex;
+    justify-content: center;
+}
+
+#div-footer{
+    display: flex;
+    justify-content:space-around;
+    width: 30%;
+}
