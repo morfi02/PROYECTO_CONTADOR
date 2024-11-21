@@ -705,7 +705,7 @@ progress {
   color: #6c757d;
 }
 .blockquote-footer::before {
-  content: "— ";
+  content: "— ";
 }
 
 .img-fluid {
@@ -12002,12 +12002,54 @@ textarea.form-control-lg {
 
 }
 
+.tarjeta{
+  text-align: center;
+}
+
 .tiempo {
+  width: 100px;
+  height: 120px;
   margin: 6px;
   padding: 8px;
   background-color:var(--bs-bg-numeros);
-  border-radius: 5px;
+  border-radius: 10px;
+  box-shadow: 0 4px 1px rgba(0, 0, 0, 0.5);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.tiempo::before,
+.tiempo::after {
+  content: ''; /* Crea los semicírculos */
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #1e1e2e; /* Color de los semicírculos */
+  border-radius: 50%; /* Hace que sean círculos */
+  top: 50%; /* Los coloca verticalmente centrados */
+  transform: translateY(-50%); /* Ajusta para que estén perfectamente centrados */
+  z-index: 1; /* Para que estén sobre la línea */
+}
+
+.tiempo::before {
+  left: -5px; /* Semicírculo izquierdo */
+}
+
+.tiempo::after {
+  right: -5px; /* Semicírculo derecho */
+}
+
+.line {
+  content: '';
+  position: absolute;
+  width: 100%; /* Abarca todo el ancho del flip-card */
+  height: 1px; /* Espesor de la línea */
+  background: #1e1e2ee7; /* Color de la línea */
+  top: 50%; /* Coloca la línea al centro vertical */
+  transform: translateY(-50%); /* Ajusta para que esté centrada */
+  z-index: 3; /* La línea se mantiene detrás de los semicírculos y número */
 }
 
 .tiempo span {
@@ -12018,8 +12060,8 @@ textarea.form-control-lg {
   font-size: 48px;
   font-weight: bold;
   color: var(--bs-color-numeros);
-  text-decoration:line-through 2px rgba(0, 0, 0, 0.342) ;
-  
+  font-size: 2cm;
+  text-align: center;
 }
 
 .label {
