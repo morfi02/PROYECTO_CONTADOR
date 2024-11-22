@@ -11992,13 +11992,18 @@ textarea.form-control-lg {
 
 .title{
   color: var(--bs-color-title);
+  font-family: "Lilita One", sans-serif;
+  font-weight: 1000;
+  font-style: normal;
+
 }
 
 .contador {
   display: flex;
   flex-direction: row;
   text-align: center;
-  padding: 20px 30px;
+  padding: 30px 30px;
+  margin: 20px;
 
 }
 
@@ -12007,10 +12012,9 @@ textarea.form-control-lg {
 }
 
 .tiempo {
-  width: 100px;
-  height: 120px;
-  margin: 6px;
-  padding: 8px;
+  width: 110px;
+  height: 100px;
+  margin: 8px;
   background-color:var(--bs-bg-numeros);
   border-radius: 10px;
   box-shadow: 0 4px 1px rgba(0, 0, 0, 0.5);
